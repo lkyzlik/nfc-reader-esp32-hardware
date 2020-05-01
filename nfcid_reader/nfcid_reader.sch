@@ -30,7 +30,7 @@ U 1 1 5E932047
 P 1450 1250
 F 0 "J1" H 1507 1567 50  0000 C CNN
 F 1 "BARREL_JACK" H 1507 1476 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1500 1210 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1500 1210 50  0001 C CNN
 F 3 "~" H 1500 1210 50  0001 C CNN
 	1    1450 1250
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5E935AD4
 P 2800 1600
 F 0 "Q1" H 3005 1554 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 3005 1645 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Horizontal" H 3000 1700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3000 1700 50  0001 C CNN
 F 3 "~" H 2800 1600 50  0001 C CNN
 	1    2800 1600
 	1    0    0    1   
@@ -124,7 +124,7 @@ U 1 1 5E94A3D6
 P 4250 2450
 F 0 "BT1" H 4368 2546 50  0000 L CNN
 F 1 "BATTERY_CELL" H 4368 2455 50  0000 L CNN
-F 2 "" V 4250 2510 50  0001 C CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" V 4250 2510 50  0001 C CNN
 F 3 "~" V 4250 2510 50  0001 C CNN
 	1    4250 2450
 	1    0    0    -1  
@@ -150,7 +150,7 @@ U 1 1 5E94FD37
 P 2650 1150
 F 0 "D1" H 2650 934 50  0000 C CNN
 F 1 "D_SHOTTKY" H 2650 1025 50  0000 C CNN
-F 2 "Diode_THT:D_5KPW_P12.70mm_Horizontal" H 2650 1150 50  0001 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2650 1150 50  0001 C CNN
 F 3 "~" H 2650 1150 50  0001 C CNN
 	1    2650 1150
 	-1   0    0    1   
@@ -245,17 +245,6 @@ $EndComp
 Wire Wire Line
 	2900 850  2900 1150
 Connection ~ 2900 1150
-$Comp
-L Regulator_Linear:NCP1117-3.3_SOT223 U2
-U 1 1 5E95D4C3
-P 4550 1100
-F 0 "U2" H 4550 1342 50  0000 C CNN
-F 1 "NCP1117-3.3_SOT223" H 4550 1251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4550 1300 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 4650 850 50  0001 C CNN
-	1    4550 1100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:CP C5
 U 1 1 5E9646BD
@@ -489,13 +478,13 @@ F 3 "~" H 1450 4300 50  0001 C CNN
 	1    1450 4300
 	1    0    0    1   
 $EndComp
-Text GLabel 1200 4000 0    50   Input ~ 0
-SPI_SCK
-Text GLabel 1200 4100 0    50   Input ~ 0
-SPI_MISO
 Text GLabel 1200 4300 0    50   Input ~ 0
-SPI_MOSI
+SPI_SCK
 Text GLabel 1200 4200 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 1200 4100 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 1200 4000 0    50   Input ~ 0
 SPI_SS
 Wire Wire Line
 	1200 4000 1250 4000
@@ -622,4 +611,15 @@ Wire Wire Line
 Wire Wire Line
 	1000 2000 1400 2000
 Connection ~ 1400 2000
+$Comp
+L Regulator_Linear:LF33_TO220 U2
+U 1 1 5E9B4988
+P 4550 1100
+F 0 "U2" H 4550 1342 50  0000 C CNN
+F 1 "LF33_TO220" H 4550 1251 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4550 1325 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 4550 1050 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
