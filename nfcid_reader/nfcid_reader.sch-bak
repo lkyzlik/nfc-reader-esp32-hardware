@@ -478,14 +478,6 @@ F 3 "~" H 1450 4300 50  0001 C CNN
 	1    1450 4300
 	1    0    0    1   
 $EndComp
-Text GLabel 1200 4000 0    50   Input ~ 0
-SPI_SCK
-Text GLabel 1200 4100 0    50   Input ~ 0
-SPI_MISO
-Text GLabel 1200 4200 0    50   Input ~ 0
-SPI_MOSI
-Text GLabel 1200 4300 0    50   Input ~ 0
-SPI_SS
 Wire Wire Line
 	1200 4000 1250 4000
 Wire Wire Line
@@ -494,62 +486,6 @@ Wire Wire Line
 	1200 4200 1250 4200
 Wire Wire Line
 	1200 4300 1250 4300
-$Comp
-L Device:R R3
-U 1 1 5E9AE8E2
-P 2650 4450
-F 0 "R3" H 2500 4400 50  0000 L CNN
-F 1 "330R" H 2400 4500 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 4450 50  0001 C CNN
-F 3 "~" H 2650 4450 50  0001 C CNN
-	1    2650 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E9B3809
-P 2450 4450
-F 0 "R2" H 2600 4400 50  0000 R CNN
-F 1 "330R" H 2700 4500 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2380 4450 50  0001 C CNN
-F 3 "~" H 2450 4450 50  0001 C CNN
-	1    2450 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2650 4300 2650 4200
-Wire Wire Line
-	2450 4300 2450 4200
-$Comp
-L power:+3V3 #PWR0119
-U 1 1 5E9B960A
-P 2550 3500
-F 0 "#PWR0119" H 2550 3350 50  0001 C CNN
-F 1 "+3V3" H 2565 3673 50  0000 C CNN
-F 2 "" H 2550 3500 50  0001 C CNN
-F 3 "" H 2550 3500 50  0001 C CNN
-	1    2550 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 4600 2450 4600
-Wire Wire Line
-	2050 4700 2650 4700
-Wire Wire Line
-	2650 4700 2650 4600
-Wire Wire Line
-	2550 3500 2550 3600
-$Comp
-L Device:LED_Dual_CAC D2
-U 1 1 5E9CBB87
-P 2550 3900
-F 0 "D2" V 2504 4188 50  0000 L CNN
-F 1 "RG_LED" V 2595 4188 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-3" H 2600 3900 50  0001 C CNN
-F 3 "~" H 2600 3900 50  0001 C CNN
-	1    2550 3900
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:CP C4
 U 1 1 5E9974A0
@@ -621,5 +557,69 @@ F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4550 1325 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 4550 1050 50  0001 C CNN
 	1    4550 1100
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E9AE8E2
+P 2650 4450
+F 0 "R3" H 2500 4400 50  0000 L CNN
+F 1 "330R" H 2400 4500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 4450 50  0001 C CNN
+F 3 "~" H 2650 4450 50  0001 C CNN
+	1    2650 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E9B3809
+P 2450 4450
+F 0 "R2" H 2600 4400 50  0000 R CNN
+F 1 "330R" H 2700 4500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2380 4450 50  0001 C CNN
+F 3 "~" H 2450 4450 50  0001 C CNN
+	1    2450 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 4300 2450 4200
+Wire Wire Line
+	2650 4300 2650 4200
+Wire Wire Line
+	2650 4700 2650 4600
+Wire Wire Line
+	2050 4700 2650 4700
+Wire Wire Line
+	2050 4600 2450 4600
+Text GLabel 1200 4100 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 1200 4200 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 1200 4300 0    50   Input ~ 0
+SPI_SS
+Text GLabel 1200 4000 0    50   Input ~ 0
+SPI_SCK
+Wire Wire Line
+	2550 3500 2550 3600
+$Comp
+L power:+3V3 #PWR0119
+U 1 1 5E9B960A
+P 2550 3500
+F 0 "#PWR0119" H 2550 3350 50  0001 C CNN
+F 1 "+3V3" H 2565 3673 50  0000 C CNN
+F 2 "" H 2550 3500 50  0001 C CNN
+F 3 "" H 2550 3500 50  0001 C CNN
+	1    2550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Dual_CAC D2
+U 1 1 5E9CBB87
+P 2550 3900
+F 0 "D2" V 2504 4188 50  0000 L CNN
+F 1 "RG_LED" V 2595 4188 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-3" H 2600 3900 50  0001 C CNN
+F 3 "~" H 2600 3900 50  0001 C CNN
+	1    2550 3900
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
