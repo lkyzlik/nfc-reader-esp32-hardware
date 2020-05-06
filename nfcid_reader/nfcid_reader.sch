@@ -547,7 +547,7 @@ U 1 1 5E9B4988
 P 4550 1100
 F 0 "U2" H 4550 1342 50  0000 C CNN
 F 1 "LF33_TO220" H 4550 1251 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4550 1325 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4550 1325 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 4550 1050 50  0001 C CNN
 	1    4550 1100
 	1    0    0    -1  

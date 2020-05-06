@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/lukas/loc_projects/nfc-identifier-hardware/nfcid_reader/nfcid_reader.sch)
-    (date "Mon 04 Mai 2020 20:09:11 CEST")
+    (date "Mit 06 Mai 2020 14:55:45 CEST")
     (tool "Eeschema 5.1.5-52549c5~86~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -129,7 +129,7 @@
       (tstamp 5E99DB98))
     (comp (ref U2)
       (value LF33_TO220)
-      (footprint Package_TO_SOT_THT:TO-220-3_Vertical)
+      (footprint Package_TO_SOT_SMD:TO-252-2)
       (datasheet http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf)
       (libsource (lib Regulator_Linear) (part LF33_TO220) (description "Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 3.3V, TO-220"))
       (sheetpath (names /) (tstamps /))
