@@ -547,7 +547,7 @@ U 1 1 5E9B4988
 P 4550 1100
 F 0 "U2" H 4550 1342 50  0000 C CNN
 F 1 "LF33_TO220" H 4550 1251 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4550 1325 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4550 1325 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 4550 1050 50  0001 C CNN
 	1    4550 1100
 	1    0    0    -1  
@@ -667,7 +667,7 @@ Wire Wire Line
 Connection ~ 5000 2600
 Wire Wire Line
 	5000 2600 5000 2700
-Text GLabel 2150 4700 2    50   Input ~ 0
+Text GLabel 1150 3700 0    50   Input ~ 0
 POW_BATT
 $Comp
 L Device:R R6
@@ -731,11 +731,11 @@ POW_SOUR
 Wire Wire Line
 	2050 4600 2150 4600
 Wire Wire Line
-	2050 4700 2150 4700
-Wire Wire Line
 	4350 3750 4350 3800
 Wire Wire Line
 	3750 3750 4350 3750
 Wire Wire Line
 	1200 4400 1150 4400
+Wire Wire Line
+	1200 3700 1150 3700
 $EndSCHEMATC
