@@ -2,7 +2,7 @@
 Hardware part of the secure NFC card reader developed on the ESP32 platform. My Bachelor thesis project created at Brno University of Technology.
 
 ## Other Parts
-* Software part: <github.com/garnagar/nfc-reader-esp32-software>
+* Software part: [github.com/garnagar/nfc-reader-esp32-software](https://github.com/garnagar/nfc-reader-esp32-software)
 
 ## List of Components
 | ID         | Component                   | Amount |
