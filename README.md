@@ -25,3 +25,5 @@ Hardware part of the secure NFC card reader developed on the ESP32 platform. My 
 | U2         | LF33 IC SMD                 |      1 |
 |            | Source DC 5V                |      1 |
 |            | PCB with manufacturing      |      1 |
+|            | [ESP32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)      |      1 |
+|            | [PN532 module](https://components101.com/wireless/pn532-nfc-rfid-module)     |      1 |
